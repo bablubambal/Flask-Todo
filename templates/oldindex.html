@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do list</title>
+</head>
+<body>
+<h2> Todo list</h2>
+
+<form method="POST" action="/">
+     Enter the task:<input required  type="text" name="title" id="title"> <br/>
+    Enter the Description: <input required type="text" name="description" id="description"/> <br/>
+    <input type="submit"  value="Add a Todo" name="submit"/>
+</form>
+
+<br/>
+<hr/>
+<div>
+<ul>
+       {% for todo in todos %}
+        <li>   {{todo.id}} :::  {{todo.title}} ==> {{todo.description}}
+            <br/>
+            <a href="/edit/{{todo.id}}"> Edit</a>
+            <a href="/delete/{{todo.id}}">Delete</a>
+        </li>
+
+      {% endfor %}
+</ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Tailwind CSS -->
+   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+
+    <title>Flask -Todo App</title>
+  </head>
+  <body>
+    <header class="text-gray-700 body-font">
+  <div class=" center container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+     <img src="{{url_for('static',filename='todo.png')}}" width="50px" height="50px">
+      <span class="ml-3 text-xl">My-Todo</span>
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+  
+    </nav>
+   
+      
+      
+  </div>
+   
+  </div>
+</header>
+
+{% block body%}
+
+{% endblock %}
+
+
+    
+    
+  </body>
+</html>

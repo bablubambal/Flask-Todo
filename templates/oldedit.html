@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit the post</title>
+</head>
+<body>
+<h1></h1>
+<h1></h1>
+<form method="POST" action="/edit/{{todo.id}}">
+     Enter the task:<input required  type="text" name="title" id="title" value="{{todo.title}}"> <br/>
+    Enter the Description: <input required type="text" name="description" id="description"
+                                  value="{{todo.description}}" /> <br/>
+    <input type="submit"  value="Save Changes" name="submit"/>
+</form>
+
+</body>
+</html>
